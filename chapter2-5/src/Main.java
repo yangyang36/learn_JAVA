@@ -1,10 +1,18 @@
-
+import java.util.ArrayList;
 
 public class Main{
 
     public static void main(String[] args) {
-        Person ashi = new Person("Ashi", 18);
-        ashi.talk(); //Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Person.getName()" because "this.spouse" is null
-
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(int i = 0; i<20; i++){
+            arr.add(i);
+        }
+        int toRemoveIndex = -1;
+        for(int k: arr){
+            if(k==10){
+                toRemoveIndex = k;
+            }
+        }
+        arr.remove(toRemoveIndex);
     }
 }
