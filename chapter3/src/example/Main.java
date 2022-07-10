@@ -3,7 +3,8 @@ package example;
 public class Main {
 
     public static void main(String[] args) {
-        Person p1 = new Person("Ashi", Nationality.CANADIAN);
-        Person p2 = new Person("AshiT", Nationality.TAIWANESS);
+        Outer outer = new Outer();
+        Outer.Inner inner = outer.new Inner();
+        inner.printI();
     }
 }
