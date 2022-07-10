@@ -1,35 +1,26 @@
-import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) {
-        String fileName = JOptionPane.showInputDialog("Filename : ");
-        File f = new File(fileName);
-        int line_count = 0;
-        int word_count=0;
-        int char_count=0;
-        try {
-            Scanner scanner = new Scanner(f);
-            while(scanner.hasNextLine()){
-                line_count ++;
-                String line = scanner.nextLine();
-                String[] line_arr = line.split(" ");
-                for(String word : line_arr){
-                    word_count++;
-                }
-                char_count += line.length();
-            }
-            scanner.close();
-            System.out.println("line count => " + line_count);
-            System.out.println("word count => " + word_count);
-            System.out.println("char count => " + char_count);
+    public Main(){
+        Map<String, Integer> incomeMap = new HashMap<>();
+        incomeMap.put("Ashi",49000);
+        incomeMap.put("Yuni",22000);
+        incomeMap.put("Ste",30000);
+        incomeMap.put("Cix",9999);
 
-        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-            System.out.println("File not found");
+        System.out.println("==============================");
+        for(Map.Entry<String, Integer> entry : incomeMap.entrySet()){
+            System.out.println(entry.getKey() + ", " + entry.getValue());
         }
+        System.out.println("==============================");
 
+//        上面跟下面這段是一樣的
+        incomeMap.forEach((name, income) -> {
+            System.out.println(name + ", "+ income);
+        });
+    }
+    public static void main(String[] args) {
+        new Main();
     }
 }
