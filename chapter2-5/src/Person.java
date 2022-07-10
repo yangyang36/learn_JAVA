@@ -9,11 +9,7 @@ public class Person {
     }
 
     public void talk(){
-        if(this.spouse != null){
-            System.out.println("My name is" + name + ", and my spouse is " + spouse.getName());
-        } else {
-            System.out.println("T.T no spouse");
-        }
+            System.out.println("My name is " + this.name);
     }
 
     public void setSpouse(Person spouse){
