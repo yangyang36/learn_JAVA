@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        String sql_statment = "select * from video";
+        String sql_statement = "select * from video";
 
         // 連接 DB (url, username, pwd)
         Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/learnJAVA", "ashi", "20190609");
@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Cannot connect to the database");
         }
 
-        PreparedStatement pps = c.prepareStatement(sql_statment);
+        PreparedStatement pps = c.prepareStatement(sql_statement);
 
         // 執行 line 5 的 sql
         ResultSet rs = pps.executeQuery();
