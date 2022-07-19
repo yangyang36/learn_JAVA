@@ -38,4 +38,13 @@
         <servlet-name>CookieServlet</servlet-name>
         <url-pattern>/cookieRegis</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>myCode.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/sessionRegis</url-pattern>
+    </servlet-mapping>
 </web-app>

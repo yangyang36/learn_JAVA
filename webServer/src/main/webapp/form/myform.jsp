@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="http://localhost:8080/cookieRegis" method="GET">
+<form action="http://localhost:8080/sessionRegis" method="GET">
     <label for="bookId">BookId: </label>
     <input type="number" name="bookId" id="bookId">
     <br>
