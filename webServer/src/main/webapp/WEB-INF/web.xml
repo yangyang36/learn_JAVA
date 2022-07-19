@@ -29,4 +29,13 @@
         <servlet-name>PostFormServlet</servlet-name>
         <url-pattern>/postBook</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>myCode.CookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/cookieRegis</url-pattern>
+    </servlet-mapping>
 </web-app>
