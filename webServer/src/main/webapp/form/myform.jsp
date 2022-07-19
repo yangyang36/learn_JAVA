@@ -11,7 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<form action="http://localhost:8080/formHandling" method="get">
+<form action="http://localhost:8080/postBook" method="POST">
+    <label for="bookId">BookId: </label>
+    <input type="number" name="bookId" id="bookId">
+    <br>
     <label for="name">Book name: </label>
     <input type="text" name="name" id="name">
     <br>
