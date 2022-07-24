@@ -47,4 +47,13 @@
         <servlet-name>SessionServlet</servlet-name>
         <url-pattern>/sessionRegis</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>book.bookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/findBook</url-pattern>
+    </servlet-mapping>
 </web-app>
