@@ -7,10 +7,25 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>Title</title>
-  </head>
-  <body>
-  
-  </body>
+</head>
+<body>
+<% for (int j = 1; j<= 100; j++){ %>
+1 + 2 + 3 + ..... + <%= j %> = <%= addUpTO(j)%>
+<br/>
+<%}%>
+
+<%!
+    private int addUpTO(int n){
+        int result = 0;
+        for(int i=0; i <=n;i++){
+            result +=i ;
+        }
+        return result;
+    }
+%>
+
+
+</body>
 </html>
